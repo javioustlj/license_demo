@@ -35,7 +35,7 @@ int check_license(void)
             std::cout << "pc signature is :" << std::endl;
             std::cout << "    " << pc_identifier << std::endl;
         } else {
-            cerr << "errors in identify_pc" << std::endl;
+            std::cerr << "errors in identify_pc" << std::endl;
         }
     }
 
@@ -44,6 +44,7 @@ int check_license(void)
 
 int main()
 {
-	std::std::cout << "Hello CMake." << std::std::endl;
-	return 0;
+	int ret = check_license();
+
+	return ret;
 }

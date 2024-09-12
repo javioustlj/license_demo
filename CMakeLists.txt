@@ -31,11 +31,11 @@ message(STATUS "LicenseCC found " ${licensecc_DIR})
 
 
 # 将源代码添加到此项目的可执行文件。
-add_executable (license_demo src/license_test.cpp)
+add_executable (license_demo src/license_demo.cpp)
 
 cmake_policy(SET CMP0028 NEW)
 
-target_link_libraries(example licensecc::licensecc_static)
+target_link_libraries(license_demo licensecc::licensecc_static)
 
 #run open-license-manager tests
 INCLUDE(CTest)
