@@ -1,0 +1,3 @@
+[submodule "extern/open-license-manager"]
+	path = extern/open-license-manager
+	url = git@github.com:open-license-manager/licensecc.git

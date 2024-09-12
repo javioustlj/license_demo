@@ -30,3 +30,14 @@
 *.exe
 *.out
 *.app
+
+# build 
+Makefile
+build/*
+
+# licensecc build result
+/project
+
+# vscode or .vs
+.vscode
+.vs
